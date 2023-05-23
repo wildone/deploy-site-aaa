@@ -1,0 +1,10 @@
+/* clientlib source: /apps/typerefinery/components/widgets/chart/clientlibs/style.css */
+[component='chart'].chart{
+    width: 100%;
+    height: 30rem;
+}
+
+
+[component='chart'].chartEditMode {
+    height: 25rem;
+}

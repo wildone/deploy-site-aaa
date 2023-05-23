@@ -1,0 +1,11 @@
+/* clientlib source: /apps/typerefinery/components/forms/fields/checkbox/clientlibs/style.css */
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.p-checkbox {
+  text-align: center;
+  margin: 0;
+}

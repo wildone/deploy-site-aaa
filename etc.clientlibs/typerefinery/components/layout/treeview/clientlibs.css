@@ -1,0 +1,12 @@
+/* clientlib source: /apps/typerefinery/components/layout/treeview/clientlibs/style.css */
+[component="treevuew"] {
+  width: 100%;
+}
+
+.list-group {
+  border-radius: 0px !important;
+}
+
+li.list-group-item {
+  background-color: transparent;
+}

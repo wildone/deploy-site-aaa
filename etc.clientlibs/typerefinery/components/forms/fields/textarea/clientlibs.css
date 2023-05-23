@@ -1,0 +1,14 @@
+/* clientlib source: /apps/typerefinery/components/forms/fields/textarea/clientlibs/style.css */
+.textarea {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 1%;
+}
+.textarea-width {
+  width: 30%;
+}
+.textarea-label {
+  display: block;
+  margin-right: 23.5%;
+}
