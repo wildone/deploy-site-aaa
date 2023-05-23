@@ -4,7 +4,7 @@ name: Deploy static content to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["gh-pages"]
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -44,12 +44,12 @@ jobs:
         if: steps.check_files.outputs.files_exists != 'true'
         with:
           python-version: '3.x'
-          
+
       # fix links in html
       - name: Fix links
         if: steps.check_files.outputs.files_exists != 'true'
-        run: python .github/workflows/fixlinks.py ${GITHUB_WORKSPACE} /${GITHUB_REPOSITORY#*/} "^\/(assets|etc)"
-        
+        run: python .github/workflows/fixlinks.py ${GITHUB_WORKSPACE} /${GITHUB_REPOSITORY#*/}
+
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
